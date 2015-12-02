@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Formulaire d'inscription</title>
+</head>
+
+<body>
+<div class="case">
+
+  <form action="Validation.php" method="post">
+    <p>
+      <label for="Pseudo">Login*</label>
+      <br/>
+      <input id="Pseudo" class="input_perso" required="required"/>
+    </p>
+    <p>
+      <label for="Email">Email*</label>
+      <br/>
+      <input id="Email" class="input_perso" required="required" />
+    </p>
+    <p>
+      <label for="Age">Age*</label>
+      <br/>
+      <input type="number" id="age" class="input_perso" required="required"/>
+    </p>
+    <p>
+      <label for="Telephone">Téléphone</label>
+      <br/>
+      <input type="Num" id="Num" class="input_perso" />
+    </p>
+    <p>
+      <form id="formulaire" method="post" onsubmit="return check('formulaire','lu')">
+
+        J'accepte les CGU du site
+        <input type="checkbox" name="accepte" required="required">
+        <br>
+    </p>
+    <p>
+      <input id="submit_button" type="submit" value="Inscription">
+    </p>
+
+</div>
+</body>
+
+</html>
